@@ -1,11 +1,11 @@
 const sentences = [
 "Creativity is intelligence having fun.",
-"Never trust a computer you can’t throw out a window.",
+"Never trust a computer you can't throw out a window.",
 "Typing is the dance of fingers across a digital stage.",
 "Learning to code is like learning to speak to machines.",
 "Speed is useful only if you're running in the right direction.",
 "A single raindrop can start a ripple across the entire lake.",
-"Books are portals to worlds we’ve never seen but somehow know.",
+"Books are portals to worlds we've never seen but somehow know.",
 "Breakfast tastes better when shared with someone you love.",
 "She found peace in the quiet hum of a sleepy afternoon.",
 "The wind whispered secrets through the rustling leaves."
