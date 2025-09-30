@@ -60,13 +60,7 @@ button:hover{
   font-weight: bold;
 }
 
-#match-message.match{
-  color:#b57edc;
-}
 
-#match-message.nomatch{
-  color:blue;
-}
 
 #result{
 margin-top:10px;
