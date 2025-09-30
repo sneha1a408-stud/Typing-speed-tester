@@ -64,7 +64,7 @@ button:hover{
   color:green;
 }
 
-#match.message.nomatch{
+#match-message.nomatch{
   color:orange;
 }
 
