@@ -14,7 +14,7 @@ const sentences = [
 let startTime, selectedSentence;
 let testStarted=false;
 
-window.startTest=function(){
+function startTest(){
   selectedSentence=sentences[Math.floor(Math.random() * sentences.length)];
   document.getElementById("sentence").textContent=selectedSentence;
   document.getElementById("input").value="";
@@ -23,7 +23,7 @@ window.startTest=function(){
   testStarted=true;
 }
 
-
+document.querySelector('button').addEventListener('click', startTest);
 document.getElementById("input").addEventListener("keydown", (e) => {
   if(!testStarted) return;
   if(e.key ==="Enter"){
@@ -46,8 +46,8 @@ document.getElementById("input").addEventListener("keydown", (e) => {
       ? "✅ Words match exactly"
       : "⚠️ Words don't exactly match";
 
-    document.getElementById("result").textContent=
-      `${matchMessage}\n WPM: ${wpm}, Accuracy: ${accuracy}%`;
+    document.getElementById("result").innerHTML =
+  `${matchMessage}<br>WPM: ${wpm}, Accuracy: ${accuracy}%`;
     testStarted=false;
   }
 
