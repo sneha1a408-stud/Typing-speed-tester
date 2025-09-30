@@ -61,11 +61,11 @@ button:hover{
 }
 
 #match-message.match{
-  color:green;
+  color:#b57edc;
 }
 
 #match-message.nomatch{
-  color:orange;
+  color:blue;
 }
 
 #result{
