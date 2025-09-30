@@ -14,7 +14,7 @@ const sentences = [
 let startTime, selectedSentence;
 let testStarted=false;
 
-function startTest(){
+window.startTest=function(){
   selectedSentence=sentences[Math.floor(Math.random() * sentences.length)];
   document.getElementById("sentence").textContent=selectedSentence;
   document.getElementById("input").value="";
