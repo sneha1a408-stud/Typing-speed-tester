@@ -34,7 +34,7 @@ textarea{
   height:100px;
   font-size:16px;
   padding:10px;
-  margin-botton:10px;
+  margin-bottom:10px;
   resize: none;
 }
 
@@ -43,7 +43,7 @@ button {
   padding: 10px 20px;
   font-size:16px;
   cursor: pointer;
-  background-color: lavender;
+  background-color: #b57edc;
   color:white;
   border: none;
   border-radius:4px;
@@ -64,14 +64,14 @@ button:hover{
   color:green;
 }
 
-#match.message.match{
+#match.message.nomatch{
   color:orange;
 }
 
 #result{
 margin-top:10px;
   font-size:16px;
-  coloe: black;
+  color: black;
 }
 
 
