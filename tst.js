@@ -12,7 +12,7 @@ const sentences = [
   ]
 
 let startTime, selectedSentence;
-let testStarted=False;
+let testStarted=false;
 
 function startTest(){
   selectedSentence=sentences[Math.floor(Math.random() * sentences.length)];
@@ -20,7 +20,7 @@ function startTest(){
   document.getElementById("input").value="";
   document.getElementById("result").textContent="";
   startTime=new Date().getTime();
-  testStarted=True;
+  testStarted=true;
 }
 
 
@@ -28,14 +28,15 @@ document.getElementById("input").addEventListener("keydown", (e) => {
   if(!testStarted) return;
   if(e.key ==="Enter"){
     e.preventDefault();
-    const typed= document.getElementById("inout").value.trim();
+    const typed= document.getElementById("input").value.trim();
     const endTime=new Date().getTime();
     const timeTaken=(endTime-startTime)/1000;
     const wordCount=selectedSentence.split(" ").length;
     const wpm=Math.round((wordCount/timeTaken)*60);
 
     const typedWords=typed.split(" ");
-    let correct=0'
+    const originalWords=selectedSentence.split(" ");
+    let correct=0;
       for (let i=0; i< originalWords.length; i++) {
           if(typedWords[i]===originalWords[i]) correct++;
       }
@@ -46,7 +47,7 @@ document.getElementById("input").addEventListener("keydown", (e) => {
       : "⚠️ Words don't exactly match";
 
     document.getElementById("result").textContent=
-      '${matchMessage}\n WPM: ${wpm}, Accuracy: ${accuracy}%';
+      `${matchMessage}\n WPM: ${wpm}, Accuracy: ${accuracy}%`;
     testStarted=false;
   }
 
